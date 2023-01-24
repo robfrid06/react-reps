@@ -7,18 +7,7 @@
 }
 
 div {
+  border: 1px solid red;
   padding: 1rem;
   margin: 1rem;
-}
-
-.granddad {
-  border: 1px solid red;
-}
-
-.dad {
-  border: 1px solid blue;
-}
-
-.offspring {
-  border: 1px solid green;
 }

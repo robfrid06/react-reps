@@ -1,11 +1,14 @@
 import './App.css';
-import Granddad from './components/Granddad';
+import Class from './components/Class';
 
 function App() {
-  const granddads = ["Bob"]
+  const school = {
+    className: "React 101",
+    students: [{name: "Robert", grades: [99, 24, 75]}, {name: "Rob", grades: [23, 17, 5]}, {name: "Bert", grades: [93, 85, 90]}]
+  }
   return (
     <div className="App">
-      {granddads.map(granddad => <Granddad name={granddad} />)}
+      <Class school={school} />
     </div>
   );
 }
