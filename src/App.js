@@ -1,14 +1,28 @@
 import './App.css';
-import Class from './components/Class';
+import Galaxy from './components/Galaxy';
+
 
 function App() {
-  const school = {
-    className: "React 101",
-    students: [{name: "Robert", grades: [99, 24, 75]}, {name: "Rob", grades: [23, 17, 5]}, {name: "Bert", grades: [93, 85, 90]}]
+  const galaxy = {
+    name: "Milky Way",
+    planets: [
+      {
+        name: "Earth",
+        moons: ["Moon"]
+      },
+      {
+        name: "Jupiter",
+        moons: ["Europa", "Io", "Ganymede", "Callisto"]
+      },
+      {
+        name: "Saturn",
+        moons: ["Titan", "Mimas", "Enceladus"]
+      }
+    ]
   }
   return (
     <div className="App">
-      <Class school={school} />
+      <Galaxy galaxy={galaxy} />
     </div>
   );
 }
