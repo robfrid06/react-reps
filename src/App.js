@@ -1,28 +1,28 @@
 import './App.css';
-import Galaxy from './components/Galaxy';
+import Period from './components/Period';
 
 
 function App() {
-  const galaxy = {
-    name: "Milky Way",
-    planets: [
+  const musicHistory = {
+    name: "Romantic",
+    composers: [
       {
-        name: "Earth",
-        moons: ["Moon"]
+        name: "Verdi",
+        compositions: ["La Traviata", "Aida", "Nabucco"]
       },
       {
-        name: "Jupiter",
-        moons: ["Europa", "Io", "Ganymede", "Callisto"]
+        name: "Puccini",
+        compositions: ["La Boheme", "Madama Butterfly", "Tosca"]
       },
       {
-        name: "Saturn",
-        moons: ["Titan", "Mimas", "Enceladus"]
+        name: "Tchaikovsky",
+        compositions: ["Pique Dame", "1812 Overture", "The Nutcracker"]
       }
     ]
   }
   return (
     <div className="App">
-      <Galaxy galaxy={galaxy} />
+      <Period period={musicHistory} />
     </div>
   );
 }
