@@ -1,28 +1,28 @@
 import './App.css';
-import Period from './components/Period';
+import SPA from './components/SPA';
 
 
 function App() {
-  const musicHistory = {
-    name: "Romantic",
-    composers: [
+  const SPAs = {
+    name: "SPAs",
+    frameworks: [
       {
-        name: "Verdi",
-        compositions: ["La Traviata", "Aida", "Nabucco"]
+        name: "React",
+        pros: ["Lightweight", "SoC", "JSX", "High Performance"]
       },
       {
-        name: "Puccini",
-        compositions: ["La Boheme", "Madama Butterfly", "Tosca"]
+        name: "Angular",
+        pros: ["High Speed", "Caching", "High Extensibility"]
       },
       {
-        name: "Tchaikovsky",
-        compositions: ["Pique Dame", "1812 Overture", "The Nutcracker"]
+        name: "Vue",
+        pros: ["Lightweight", "Minimalistic", "Reusable Components", "Developer Friendly"]
       }
     ]
   }
   return (
     <div className="App">
-      <Period period={musicHistory} />
+      <SPA spas={SPAs} />
     </div>
   );
 }
